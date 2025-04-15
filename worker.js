@@ -2,12 +2,35 @@
 // 
 
 let robotstxt = `# pilotsnpaws.org robots.txt file
+
+User-agent: *
+Disallow: /stats/
+Disallow: /maps_more/
+Disallow: /references/
+Disallow: /wp-includes/
+Disallow: /forum/memberlist.php
+Disallow: /forum/utils/
+Disallow: /notif/
+Crawl-delay: 3
+
+User-Agent: MJ12bot
+Crawl-Delay: 15
+Disallow: /forum/
+
+User-agent: Amazonbot               # Amazon's user agent
+Crawl-Delay: 15
+Disallow: /forum/            # disallow this directory
+
+
 User-Agent: *
 Disallow: /admin
 Disallow: /api/*
 
-# for cloudflare RUM
-Disallow: /cdn-cgi/
+User-agent: SemrushBot-SA
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+
 
 User-agent: sogou spider
 Disallow: /
